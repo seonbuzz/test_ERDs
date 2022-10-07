@@ -4,8 +4,8 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": -207,
-    "zoomLevel": 1,
+    "scrollLeft": 0,
+    "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -97,7 +97,7 @@
           "active": false,
           "left": 331,
           "top": 47,
-          "zIndex": 223,
+          "zIndex": 237,
           "widthName": 129.41015625,
           "widthComment": 102.140625
         },
@@ -105,8 +105,8 @@
         "id": "ff23c533-742f-4f74-8ba9-75f3c8858899"
       },
       {
-        "name": "Users",
-        "comment": "",
+        "name": "USERS",
+        "comment": "사용자들",
         "columns": [
           {
             "name": "NAME",
@@ -159,7 +159,7 @@
           "active": false,
           "left": 942,
           "top": 254,
-          "zIndex": 231,
+          "zIndex": 233,
           "widthName": 60,
           "widthComment": 60
         },
@@ -283,7 +283,7 @@
           "active": false,
           "left": 324,
           "top": 473,
-          "zIndex": 227,
+          "zIndex": 236,
           "widthName": 77.40380859375,
           "widthComment": 71.5703125
         },
