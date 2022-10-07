@@ -1,0 +1,469 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -207,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "MOVIE_TITLE&GENRE",
+        "comment": "영화 이름과 장르",
+        "columns": [
+          {
+            "name": "UniqueID",
+            "comment": "대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "69234819-1707-4f7e-b419-b04c94761e4c"
+          },
+          {
+            "name": "MOVIE_TITLE&GENRE",
+            "comment": "영화 이름과 장르",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 129.41015625,
+              "widthComment": 102.140625,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "559a2875-056f-4248-b85a-0e0cf65c3781"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 331,
+          "top": 47,
+          "zIndex": 223,
+          "widthName": 129.41015625,
+          "widthComment": 102.140625
+        },
+        "visible": true,
+        "id": "ff23c533-742f-4f74-8ba9-75f3c8858899"
+      },
+      {
+        "name": "Users",
+        "comment": "",
+        "columns": [
+          {
+            "name": "NAME",
+            "comment": "이름",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "79b94403-b897-4ffe-b590-3c9c2571d671"
+          },
+          {
+            "name": "RENTER_UNIQUE_ID",
+            "comment": "대여자 UniqueID",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 120.59326171875,
+              "widthComment": 100.5537109375,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "23fe4604-2155-43f9-923c-07b6c8f9d01e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 942,
+          "top": 254,
+          "zIndex": 231,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "79049315-4d14-4c57-9c6f-5bba74db7317"
+      },
+      {
+        "name": "RENTER",
+        "comment": "대여자",
+        "columns": [
+          {
+            "name": "UNIQUE_ID",
+            "comment": "대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 68.87255859375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "9a44bbb2-be15-4cd1-8790-c05af057fcf1"
+          },
+          {
+            "name": "RENTER_UNIQUE_ID",
+            "comment": "대여자 UniqueID",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 120.59326171875,
+              "widthComment": 100.5537109375,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "e6b979fb-9a6d-4f76-afb2-bf152ea6086e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 942,
+          "top": 47,
+          "zIndex": 229,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "d89548f6-4748-43b0-b1b6-875c7705ff3f"
+      },
+      {
+        "name": "POSTER_LIST",
+        "comment": "포스터 목록",
+        "columns": [
+          {
+            "name": "POSTER_LIST_UNIQUE_ID",
+            "comment": "포스터목록 대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 149.8115234375,
+              "widthComment": 110.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "7902affa-a983-4edc-9049-7cbd3f3d3354"
+          },
+          {
+            "name": "POSTER",
+            "comment": "포스터",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "bee32c3e-2a58-4b30-a65a-9d50ac443b5d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 324,
+          "top": 473,
+          "zIndex": 227,
+          "widthName": 77.40380859375,
+          "widthComment": 71.5703125
+        },
+        "visible": true,
+        "id": "60df24a8-cb3f-4535-9933-810cd408b61d"
+      },
+      {
+        "name": "POSTER",
+        "comment": "포스터",
+        "columns": [
+          {
+            "name": "POSTER_LIST_UNIQUE_ID",
+            "comment": "포스터목록 대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 149.8115234375,
+              "widthComment": 110.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "39a7b1e0-0bc5-4b41-8965-d791dc0f220d"
+          },
+          {
+            "name": "UNIQUE_ID",
+            "comment": "대표값",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 68.87255859375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "d1eb9d32-90cd-437c-bb82-3735b3da4c7a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 324,
+          "top": 260,
+          "zIndex": 225,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7a4e6f6d-ab1f-4f0b-a628-25ce1f74c907"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ff23c533-742f-4f74-8ba9-75f3c8858899",
+          "columnIds": [
+            "69234819-1707-4f7e-b419-b04c94761e4c"
+          ],
+          "x": 818.84375,
+          "y": 102,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "d89548f6-4748-43b0-b1b6-875c7705ff3f",
+          "columnIds": [
+            "9a44bbb2-be15-4cd1-8790-c05af057fcf1"
+          ],
+          "x": 942,
+          "y": 102,
+          "direction": "left"
+        },
+        "constraintName": "fk_movie title&genre_to_lender",
+        "visible": true,
+        "id": "5988281a-5dec-423e-b578-a7c9b644b3b3"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "79049315-4d14-4c57-9c6f-5bba74db7317",
+          "columnIds": [
+            "23fe4604-2155-43f9-923c-07b6c8f9d01e"
+          ],
+          "x": 1180.719970703125,
+          "y": 254,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "d89548f6-4748-43b0-b1b6-875c7705ff3f",
+          "columnIds": [
+            "e6b979fb-9a6d-4f76-afb2-bf152ea6086e"
+          ],
+          "x": 1180.719970703125,
+          "y": 157,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_users_to_lender",
+        "visible": true,
+        "id": "be0c1906-100e-4d36-ad7b-93c396953dc0"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7a4e6f6d-ab1f-4f0b-a628-25ce1f74c907",
+          "columnIds": [
+            "39a7b1e0-0bc5-4b41-8965-d791dc0f220d"
+          ],
+          "x": 582.33740234375,
+          "y": 370,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "60df24a8-cb3f-4535-9933-810cd408b61d",
+          "columnIds": [
+            "7902affa-a983-4edc-9049-7cbd3f3d3354"
+          ],
+          "x": 582.33740234375,
+          "y": 473,
+          "direction": "top"
+        },
+        "constraintName": "fk_poster_to_poster list",
+        "visible": true,
+        "id": "6fc4321e-f6d2-4603-a14c-3d42fd99d8f3"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ff23c533-742f-4f74-8ba9-75f3c8858899",
+          "columnIds": [
+            "69234819-1707-4f7e-b419-b04c94761e4c"
+          ],
+          "x": 574.921875,
+          "y": 157,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "7a4e6f6d-ab1f-4f0b-a628-25ce1f74c907",
+          "columnIds": [
+            "d1eb9d32-90cd-437c-bb82-3735b3da4c7a"
+          ],
+          "x": 582.33740234375,
+          "y": 260,
+          "direction": "top"
+        },
+        "constraintName": "fk_movie title&genre_to_poster",
+        "visible": true,
+        "id": "b3c44bb5-dfb3-4eb7-955e-9473ba3e462f"
+      }
+    ]
+  }
+}
